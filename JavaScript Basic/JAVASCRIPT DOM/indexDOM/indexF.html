@@ -1,0 +1,15 @@
+<h1 id="display">select name</h1>
+<button id="btn1" onclick="displayText(event)">Harihara Sudan</button>
+<button id="btn2" onclick="displayText(event)">Vishnu Vardhni</button>
+<button id="btn3" onclick="displayText(event)">Abinaya</button>
+
+<script>
+  var h1=document.getElementById("display")
+  var btn1=document.getElementById("btn1")
+  var btn2=document.getElementById("btn2")
+  var btn3=document.getElementById("btn3")
+  function displayText(event){
+    h1.textContent=event.target.textContent
+  }
+
+</script> 

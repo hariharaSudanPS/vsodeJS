@@ -1,0 +1,36 @@
+<style>
+  div{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    transition:0.5s;
+  }
+.widthmax{
+  width: 700px;
+}
+.widthmin{
+  width: 200px;
+}
+</style>
+
+
+<div id="box"></div>
+<button onclick="change()" onkeydown="changeagain()">
+  change color
+</button>
+<script>
+  var box=document.getElementById("box")
+
+  function change(){
+
+    box.style.backgroundColor="yellow"
+    box.setAttribute("class","widthmax")
+  }
+
+  function changeagain(){
+    box.style.backgroundColor="black"
+    box.setAttribute("class","widthmin")
+
+  }
+
+</script>
